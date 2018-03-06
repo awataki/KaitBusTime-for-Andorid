@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/go"
+        android:icon="@drawable/ic_go_black_24dp"
+        android:title="Go" />
+
+    <item
+        android:id="@+id/back"
+        android:icon="@drawable/ic_back_black_24dp"
+        android:title="Return" />
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Settings" />
+
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="大学行乗り場">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="go_from0"
+            android:title="バスセンター" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="go_from1"
+            android:title="駅前乗り場" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="駅行乗り場">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="return_from0"
+            android:title="学内" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="return_from1"
+            android:title="路線" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="return_from2"
+            android:title="シャトルバス" />
+    </PreferenceCategory>
+</PreferenceScreen>
