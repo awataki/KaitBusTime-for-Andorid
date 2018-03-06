@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.preference.PreferenceManager
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import plus.marco.bus.Fragments.GoFragment
 import plus.marco.bus.Fragments.ReturnFragment

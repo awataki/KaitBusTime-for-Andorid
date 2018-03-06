@@ -1,6 +1,5 @@
 package plus.marco.bus
 
-import android.annotation.SuppressLint
 import android.os.AsyncTask
 import android.util.Log
 import android.widget.TextView
@@ -9,8 +8,6 @@ import okhttp3.Request
 import org.json.JSONException
 import org.json.JSONObject
 import java.text.SimpleDateFormat
-import java.util.*
-import kotlin.math.max
 import kotlin.math.min
 
 

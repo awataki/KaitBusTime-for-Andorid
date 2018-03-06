@@ -2,11 +2,12 @@ package plus.marco.bus.Fragments
 
 import android.app.Fragment
 import android.os.Bundle
-import android.util.Log
-import android.view.*
-import android.widget.Toast
-import plus.marco.bus.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_time.*
+import plus.marco.bus.R
+import plus.marco.bus.WebGet
 
 /**
  * Created by awataki on 2/28/18.
