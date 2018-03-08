@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="plus.marco.bus"
     android:versionCode="1"
-    android:versionName="0.3" >
+    android:versionName="0.4" >
 
     <uses-sdk
         android:minSdkVersion="23"
@@ -22,6 +22,7 @@
         <activity
             android:name="plus.marco.bus.MainActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.custom" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

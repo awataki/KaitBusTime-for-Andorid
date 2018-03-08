@@ -2,37 +2,75 @@
 <instant-run
     abi="x86"
     api-level="27"
-    build-mode="COLD"
+    build-mode="FULL"
     density="420dpi"
     format="10"
+    ir-eligibility="FIELD_TYPE_CHANGE"
     plugin-version="3.0.1"
-    timestamp="1520482980415"
+    timestamp="1520483906571"
     token="6723452882781376658"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="933" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="85" />
     <task
         name="verifier"
-        duration="0" />
+        duration="23" />
 
+    <artifact
+        location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
     <artifact
         location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/outputs/apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1520480840261"
-        verifier="FULL_BUILD_REQUESTED" >
+        ir-eligibility="FIELD_TYPE_CHANGE"
+        timestamp="1520483906571"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
@@ -41,79 +79,26 @@
             location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/outputs/apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1520481691087"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="METHOD_ADDED"
-        timestamp="1520482606430"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1520482791784"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1520482980415"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/awataki/AndroidStudioProjects/KaitBus/app/build/outputs/apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
