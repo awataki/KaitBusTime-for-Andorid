@@ -1,4 +1,4 @@
-#Tue Mar 06 19:40:34 JST 2018
+#Thu Mar 08 13:01:34 JST 2018
 base.0=/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/transforms/dexMerger/debug/41
 path.0=classes.dex
 renamed.0=classes.dex

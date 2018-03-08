@@ -16,6 +16,7 @@ import kotlin.math.min
  */
 
 var json:JSONObject? = null
+var from:Int? = null
 
 class WebGet(f0:TextView,f1:TextView,f2:TextView,f3:Boolean): AsyncTask<String, Void, JSONObject>() {
 
@@ -26,7 +27,6 @@ class WebGet(f0:TextView,f1:TextView,f2:TextView,f3:Boolean): AsyncTask<String, 
     val bool = f3
     val fromarray= if (bool) go_from else return_from
     val tag = if (bool) "async:g" else "async:r"
-    var from:Int? = null
 
     override fun doInBackground(vararg prams: String?): JSONObject? {
 
@@ -61,21 +61,21 @@ class WebGet(f0:TextView,f1:TextView,f2:TextView,f3:Boolean): AsyncTask<String, 
 
         try {
             from = json!!.getJSONArray("fast")[1].toString().toInt()
-            val min:Int =
-                    if (fromarray[from!!]){
+            val min: Int =
+                    if (fromarray[from!!]) {
                         //fastでいいとき
                         getjson(from!!)
-                    }else{
+                    } else {
                         //だめなとき
-                        when(from){
+                        when (from) {
                             0 -> {
-                                judge(1,2)
+                                judge(1, 2)
                             }
                             1 -> {
-                                judge(0,2)
+                                judge(0, 2)
                             }
                             2 -> {
-                                judge(0,1)
+                                judge(0, 1)
                             }
                             else -> {
                                 0
@@ -83,52 +83,8 @@ class WebGet(f0:TextView,f1:TextView,f2:TextView,f3:Boolean): AsyncTask<String, 
                         }
                     }
 
-            val h:String = (min/60).toString()
-            var m:String = (min%60).toString()
-            var remain = min-((SimpleDateFormat("HH").format(System.currentTimeMillis())).toInt()*60+SimpleDateFormat("mm").format(System.currentTimeMillis()).toInt())
+            SetBusTime(min,fast,busstop,remaining,bool)
 
-            fast.text =
-                    if (min==0)
-                        "nothing"
-                    else if (m.toInt()<10)
-                        h+":0"+m
-                    else
-                        h+":"+m
-
-            busstop.text =
-                    if (min == 0){
-                        "empty"
-                    } else {
-                        when (bool) {
-                            true -> {
-                                when (from) {
-                                    0 -> "バスセンター"
-                                    1 -> "駅前乗り場"
-                                    else -> "error"
-                                }
-                            }
-                            false -> {
-                                when (from) {
-                                    0 -> "学内"
-                                    1 -> "路線"
-                                    2 -> "シャトルバス"
-                                    else -> "error"
-                                }
-                            }
-
-                        }
-                    }
-
-            remaining.text =
-                    if (min == 0){
-                        "empty"
-                    } else {
-                        "発車まであと" +
-                                if (remain > 60)
-                                    (remain / 60).toString() + "時間" + (remain % 60).toString() + "分"
-                                 else
-                                    remain.toString() + "分"
-                    }
         }catch (e:Exception) {
             busstop.text = "ServerError"
         }catch (e:JSONException){
@@ -168,4 +124,53 @@ class WebGet(f0:TextView,f1:TextView,f2:TextView,f3:Boolean): AsyncTask<String, 
             return getjson(min(getjson(p0),getjson(p1)))
         }
     }
+}
+
+fun SetBusTime (min:Int,fast:TextView,busstop:TextView,remaining:TextView,bool:Boolean){
+    val h:String = (min/60).toString()
+    var m:String = (min%60).toString()
+    var remain = min-((SimpleDateFormat("HH").format(System.currentTimeMillis())).toInt()*60+SimpleDateFormat("mm").format(System.currentTimeMillis()).toInt())
+
+    fast.text =
+            if (min==0)
+                "nothing"
+            else if (m.toInt()<10)
+                h+":0"+m
+            else
+                h+":"+m
+
+    busstop.text =
+            if (min == 0){
+                "empty"
+            } else {
+                when (bool) {
+                    true -> {
+                        when (from) {
+                            0 -> "バスセンター"
+                            1 -> "駅前乗り場"
+                            else -> "error"
+                        }
+                    }
+                    false -> {
+                        when (from) {
+                            0 -> "学内"
+                            1 -> "路線"
+                            2 -> "シャトルバス"
+                            else -> "error"
+                        }
+                    }
+
+                }
+            }
+
+    remaining.text =
+            if (min == 0){
+                "empty"
+            } else {
+                "発車まであと" +
+                        if (remain > 60)
+                            (remain / 60).toString() + "時間" + (remain % 60).toString() + "分"
+                        else
+                            remain.toString() + "分"
+            }
 }
