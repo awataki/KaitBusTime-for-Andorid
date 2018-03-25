@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_time.*
 import plus.marco.bus.*
+import plus.marco.bus.RecivedData.from
+import plus.marco.bus.RecivedData.json
 
 /**
  * Created by awataki on 2/28/18.
@@ -19,7 +21,8 @@ class GoFragment :Fragment() {
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        WebGet(Time,Remaining,BusStop,true).execute("http://marco.plus/api/goFull")
+        WebGet().execute("https://marco.plus/api/goFull")
+        Parser().Parse(Time,BusStop,Remaining)
         FAB.setOnClickListener{Change()}
     }
     fun Change(){
@@ -28,12 +31,12 @@ class GoFragment :Fragment() {
                 0 -> {
                     from = 1
                     var min = json!!.getJSONArray("from")[1].toString().toInt()
-                    SetBusTime(min,Time,BusStop,Remaining,true)
+                    Parser().SetBusTime(min,Time,BusStop,Remaining,true)
                 }
                 1 -> {
                     from = 0
                     var min = json!!.getJSONArray("from")[0].toString().toInt()
-                    SetBusTime(min,Time,BusStop,Remaining,true)
+                    Parser().SetBusTime(min,Time,BusStop,Remaining,true)
                 }
                 else -> {
                     "Error"

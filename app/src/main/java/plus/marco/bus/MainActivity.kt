@@ -6,13 +6,14 @@ import android.preference.PreferenceManager
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import plus.marco.bus.Flags.Direction_flag
+import plus.marco.bus.Flags.go_from
+import plus.marco.bus.Flags.return_from
 import plus.marco.bus.Fragments.GoFragment
 import plus.marco.bus.Fragments.ReturnFragment
 import plus.marco.bus.Fragments.SettingsFragment
 
 //Settings
-var go_from:Array<Boolean> = arrayOf(true,true,false)
-var return_from:Array<Boolean> = arrayOf(true,true,true)
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,11 +23,13 @@ class MainActivity : AppCompatActivity() {
             R.id.go -> {
                 UpdatePreference()
                 Fragment(R.id.Linear, GoFragment())
+                Direction_flag = true
                 return@OnNavigationItemSelectedListener true
             }
             R.id.back -> {
                 UpdatePreference()
                 Fragment(R.id.Linear, ReturnFragment())
+                Direction_flag = false
                 return@OnNavigationItemSelectedListener true
             }
             R.id.menu -> {
