@@ -4,7 +4,7 @@
             "outputFile": "/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/awataki/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/d536023b0ebeab49f993b679f375e231/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/awataki/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/883aae900a6174822ae2b0a848e189a5/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/awataki/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f9c576288516248ff847af2c4b203a3b/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/awataki/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f5f6722b06a94c7b63d0e4b086b8ee2f/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

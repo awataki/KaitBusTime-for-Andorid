@@ -4,7 +4,7 @@
             "outputFile": "/home/awataki/AndroidStudioProjects/KaitBus/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/awataki/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/33db2982610343a4d32880a67d0b0a89/res/values-v16/values-v16.xml",
+                    "source": "/home/awataki/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cc8a358584d23c1253851bccebd85e6e/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/awataki/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f9c576288516248ff847af2c4b203a3b/res/values-v16/values-v16.xml",
+                    "source": "/home/awataki/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f5f6722b06a94c7b63d0e4b086b8ee2f/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
