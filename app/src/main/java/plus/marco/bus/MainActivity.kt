@@ -21,19 +21,19 @@ class MainActivity : AppCompatActivity() {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.go -> {
-                UpdatePreference()
-                Fragment(R.id.Linear, GoFragment())
+                updatePref()
+                replaceFragment(R.id.Linear, GoFragment())
                 Direction_flag = true
                 return@OnNavigationItemSelectedListener true
             }
             R.id.back -> {
-                UpdatePreference()
-                Fragment(R.id.Linear, ReturnFragment())
+                updatePref()
+                replaceFragment(R.id.Linear, ReturnFragment())
                 Direction_flag = false
                 return@OnNavigationItemSelectedListener true
             }
             R.id.menu -> {
-                Fragment(R.id.Linear, SettingsFragment())
+                replaceFragment(R.id.Linear, SettingsFragment())
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -43,18 +43,21 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        UpdatePreference()
-        Fragment(R.id.Linear, GoFragment())
+        updatePref()
+        replaceFragment(R.id.Linear, GoFragment())
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
 
-    //ReplaceFragment(layoutid,Fragment())
-    fun Fragment(id: Int, fragment:Fragment) {
-        fragmentManager.beginTransaction().replace(id,fragment).commit()
+    //ReplaceFragment(layoutId,Fragment())
+    private fun replaceFragment(id: Int, fragment:Fragment) {
+        fragmentManager
+                .beginTransaction()
+                .replace(id,fragment)
+                .commit()
     }
 
     //ReloadSettings
-    fun UpdatePreference(){
+    private fun updatePref(){
         var pref = PreferenceManager.getDefaultSharedPreferences(this)
         go_from[0] = pref.getBoolean("go_from0",true)
         go_from[1] = pref.getBoolean("go_from1",true)
