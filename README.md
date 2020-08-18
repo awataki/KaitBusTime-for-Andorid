@@ -1,2 +1,2 @@
 # KaitBusTime
-This application Is [KaitBusTime](https://marco.plus/contents/bustime/) for Android
+This application Is [KaitBusTime](https://bus.marco.plus/) for Android
